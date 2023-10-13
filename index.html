@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="w-full">
+      <!-- nav bar -->
+      <nav class="bg-white shadow-lg">
+        <div class="md:flex items-center justify-between py-2 px-8 md:px-12">
+          <div class="flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800 md:text-3xl">
+              <a href="#">mik.sh</a>
+            </div>
+            <div class="md:hidden">
+              <button
+                type="button"
+                class="block text-gray-800 hover:text-gray-700 focus:text-gray-700 focus:outline-none"
+              >
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                  <path
+                    class="hidden"
+                    d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"
+                  />
+                  <path
+                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row hidden md:block -mx-2">
+            <a
+              href="#services"
+              class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
+              >Services</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- hero secton -->
+      <div class="flex bg-white" style="height: 600px">
+        <div
+          class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2"
+        >
+          <div>
+            <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl">
+              Craft Landing Pages That
+              <span class="text-indigo-600">Convert</span>
+            </h2>
+            <p class="mt-2 text-sm text-gray-500 md:text-base">
+              Welcome to the ultimate destination for building landing pages
+              that captivate, convert, and inspire action.Grow your business
+              with one click.
+            </p>
+            <div class="flex justify-center lg:justify-start mt-6">
+              <a
+                class="px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800"
+                href="#"
+                >Get Started</a
+              >
+              <a
+                class="mx-4 px-4 py-3 bg-gray-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400"
+                href="#services"
+                >Services offered</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="hidden lg:block lg:w-1/2"
+          style="clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%)"
+        >
+          <div
+            class="h-full object-cover"
+            style="
+              background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
+            "
+          >
+            <div class="h-full bg-black opacity-25"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services section -->
+    <div class="flex justify-center" id="services">
+      <!-- component -->
+      <div class="py-20">
+        <div class="container">
+          <div class="mx-auto max-w-4xl text-center">
+            <h2 class="md:text-5xl text-3xl font-semibold tracking-tight">
+              Services offered
+            </h2>
+            <div class="flex justify-center">
+              <p
+                class="md:w-1/2 mt-6 text-xl/8 font-medium text-gray-500 text-gray-400"
+              >
+                We offer the following services for businesses and individuals
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-16 px-2"
+          >
+            <div>
+              <div class="p-7 rounded-xl border-2">
+                <h3 class="text-xl font-semibold mb-7">SEO Optimisation</h3>
+                <p
+                  class="font-medium leading-7 text-gray-500 mb-6 text-gray-400"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam necessitatibus incidunt ut officiis explicabo
+                  inventore.
+                </p>
+                <a
+                  href="#"
+                  class="py-3 flex items-center justify-center w-full font-semibold rounded-md bg-white hover:bg-purple-500 hover:text-white transition-all duration-500 border-2 rounded-xl hover:bg-purple-500 hover:text-white"
+                  >Get Started
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    class="h-5 w-5 ms-3"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <div class="p-7 rounded-xl p-7 rounded-xl border-2">
+                <h3 class="text-xl font-semibold mb-7">
+                  Web Design & Development
+                </h3>
+                <p
+                  class="font-medium leading-7 text-gray-500 mb-6 text-gray-400"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam necessitatibus incidunt ut officiis explicabo
+                  inventore.
+                </p>
+                <a
+                  href="#"
+                  class="py-3 flex items-center justify-center w-full font-semibold rounded-md bg-white hover:bg-purple-500 hover:text-white transition-all duration-500 border-2 rounded-xl hover:bg-purple-500 hover:text-white"
+                  >Get Started
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    class="h-5 w-5 ms-3"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <div class="p-7 rounded-xl p-7 rounded-xl border-2">
+                <h3 class="text-xl font-semibold mb-7">Conversion Funnels</h3>
+                <p
+                  class="font-medium leading-7 text-gray-500 mb-6 text-gray-400"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam necessitatibus incidunt ut officiis explicabo
+                  inventore.
+                </p>
+                <a
+                  href="#"
+                  class="py-3 flex items-center justify-center w-full font-semibold rounded-md bg-white hover:bg-purple-500 hover:text-white transition-all duration-500 border-2 rounded-xl hover:bg-purple-500 hover:text-white"
+                  >Get Started
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    class="h-5 w-5 ms-3"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <div class="p-7 rounded-xl p-7 rounded-xl border-2">
+                <h3 class="text-xl font-semibold mb-7">
+                  Content Best Practices
+                </h3>
+                <p
+                  class="font-medium leading-7 text-gray-500 mb-6 text-gray-400"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam necessitatibus incidunt ut officiis explicabo
+                  inventore.
+                </p>
+                <a
+                  href="#"
+                  class="py-3 flex items-center justify-center w-full font-semibold rounded-md bg-white hover:bg-purple-500 hover:text-white transition-all duration-500 border-2 rounded-xl hover:bg-purple-500 hover:text-white"
+                  >Get Started
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    class="h-5 w-5 ms-3"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <div class="p-7 rounded-xl p-7 rounded-xl border-2">
+                <h3 class="text-xl font-semibold mb-7">Content Optimisation</h3>
+                <p
+                  class="font-medium leading-7 text-gray-500 mb-6 text-gray-400"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam necessitatibus incidunt ut officiis explicabo
+                  inventore.
+                </p>
+                <a
+                  href="#"
+                  class="py-3 flex items-center justify-center w-full font-semibold rounded-md bg-white hover:bg-purple-500 hover:text-white transition-all duration-500 border-2 rounded-xl hover:bg-purple-500 hover:text-white"
+                  >Get Started
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    class="h-5 w-5 ms-3"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <div class="p-7 rounded-xl p-7 rounded-xl border-2">
+                <h3 class="text-xl font-semibold mb-7">SEO Analysis</h3>
+                <p
+                  class="font-medium leading-7 text-gray-500 mb-6 text-gray-400"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam necessitatibus incidunt ut officiis explicabo
+                  inventore.
+                </p>
+                <a
+                  href="#"
+                  class="py-3 flex items-center justify-center w-full font-semibold rounded-md bg-white hover:bg-purple-500 hover:text-white transition-all duration-500 border-2 rounded-xl hover:bg-purple-500 hover:text-white"
+                  >Get Started
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    class="h-5 w-5 ms-3"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact me -->
+    <div class="flex bg-white" style="height: 600px" id="contact">
+      <div class="flex items-center justify-center lg:text-left px-8 w-full">
+        <!-- <div class="flex min-h-screen items-center justify-start bg-white"> -->
+        <div class="w-full max-w-lg">
+          <h1 class="text-4xl font-medium">Contact Me</h1>
+          <p class="mt-3">Email me at email@domain.com or message us here:</p>
+
+          <form action="https://api.web3forms.com/submit" class="mt-10">
+            <!-- This is a working contact form. 
+           Get your free access key from: https://web3forms.com/  -->
+
+            <input
+              type="hidden"
+              name="access_key"
+              value="YOUR_ACCESS_KEY_HERE"
+            />
+            <div class="grid gap-6 sm:grid-cols-2">
+              <div class="relative z-0">
+                <input
+                  type="text"
+                  name="name"
+                  class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                  placeholder=" "
+                />
+                <label
+                  class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:text-blue-500"
+                  >Your name</label
+                >
+              </div>
+              <div class="relative z-0">
+                <input
+                  type="text"
+                  name="email"
+                  class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                  placeholder=" "
+                />
+                <label
+                  class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:text-blue-500"
+                  >Your email</label
+                >
+              </div>
+              <div class="relative z-0 col-span-2">
+                <textarea
+                  name="message"
+                  rows="5"
+                  class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                  placeholder=" "
+                ></textarea>
+                <label
+                  class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:text-blue-500"
+                  >Your message</label
+                >
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="mt-5 rounded-md bg-black px-10 py-2 text-white"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <!-- component -->
+    <!-- This is an example component -->
+
+    <footer
+      class="flex flex-row items-center justify-between border-2 px-6 py-8"
+    >
+      <div class="text-2xl font-bold text-gray-800 md:text-3xl">
+        <a href="#">mik.sh</a>
+      </div>
+      <div class="text-xl font-bold text-gray-800 hover:underline">
+        <a href="https://github.com/mik1337" target="_blank">Contact Me</a>
+      </div>
+    </footer>
+  </body>
+</html>
